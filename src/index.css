@@ -1,58 +1,104 @@
 :root {
-  line-height: 1.5;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  /* font-family: "McLaren", sans-serif; */
-  font-style: normal;
+	line-height: 1.5;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+	font-style: normal;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
+	margin: 0;
+	font-family: "McLaren", sans-serif;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-
 
 .header {
-  background: #f5ba13;
-  height: 100px;
-  width: 100%;
-  padding: 16px 32px;
-  margin: auto -16px;
-  box-shadow: 0 0 10px 0  rgba(0,0 ,0, 0.3);
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+	background: #f5ba13;
+	height: 100px;
+	width: 100%;
+	padding: 16px 32px;
+	margin: auto -16px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	font-family: "McLaren", cursive;
+	font-weight: 200;
 }
 
-.note{
-  margin: 16px;
-  background: white;
-  color: #242424;
-  float: left;
-  box-shadow: 0 2px 5px #ccc;
-  flex-direction: column;
-  border-radius: 7px;
-  font-family: "Montserrat", sans-serif;
-  width: 240px;
+.AddNewNote {
+	width: 30rem;
+	font-family: "Montserrat";
+	margin: 50px auto 0 auto;
 }
-.note h1{
-  font-size: 1.1em;
-  margin-bottom: 6px;
+.indiv {
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 5px #ccc;
 }
-.note p{
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+.addTitle {
+	height: 3rem;
+	border: none;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	font-size: 30px;
+}
+.addContent {
+	height: 5rem;
+	border: none;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	font-size: 20px;
+}
+#Addbtn {
+	border-radius: 30px;
+	position: relative;
+	float: right;
+	margin-right: 30px;
+	width: 45px;
+	height: 45px;
+	background: #f5ba13;
+	font-size: 20px;
+	top: -22.5px;
+	border: none;
+	box-shadow: 0 2px 5px #ccc;
+}
+.notesdiv {
+	margin-top: 5rem;
+}
+.note {
+	margin: 16px;
+	background: white;
+	color: #242424;
+	float: left;
+	box-shadow: 0 2px 5px #ccc;
+	flex-direction: column;
+	border-radius: 7px;
+	font-family: "Montserrat", sans-serif;
+	width: 240px;
+}
+.note h1 {
+	font-size: 1.1em;
+	margin-bottom: 6px;
+}
+.note p {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
-.footer{
-  position: absolute;
-  color: white;
-  text-align: center;
-  bottom: 0;
-  width: 99%;
-  height: 2.5rem;
+.delbtn{
+color: #f5ba13;	
+background: none;
+border: none;
+float: right;
+font-weight: bold;
+
+}
+.footer {
+	position: absolute;
+	color: white;
+	text-align: center;
+	bottom: 0;
+	width: 99%;
+	height: 2.5rem;
 }
